@@ -144,7 +144,7 @@ ORDER BY avg_rating DESC;
 # Number of sales made in each time of the day per weekday
 SELECT SUM(quantity) AS qty ,day_name AS days,time_of_day
 FROM sales 
-GROUP BY days,time_of_day
+GROUP BY days,time_of_day 
 ORDER BY qty DESC;
 
 # Which of the customer types brings the most revenue?
